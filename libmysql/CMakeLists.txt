@@ -275,7 +275,7 @@ IF(UNIX)
   ENDMACRO()
 ENDIF()
 
-IF(NOT DISABLE_SHARED)
+IF(NOT DISABLE_SHARED AND NOT FUZZING)
   # Merge several convenience libraries into one big mysqlclient
   # and link them together into shared library.
   MERGE_LIBRARIES_SHARED(libmysql ${LIBS_TO_MERGE}
@@ -367,7 +367,7 @@ IF(CMAKE_COMPILER_IS_GNUCXX)
     )
 ENDIF()
 
-IF(DISABLE_SHARED)
+IF(DISABLE_SHARED OR FUZZING)
   TARGET_LINK_LIBRARIES(libmysql_api_test ${LIBS_TO_MERGE})
 ELSE()
   TARGET_LINK_LIBRARIES(libmysql_api_test libmysql)
