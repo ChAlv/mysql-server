@@ -4272,6 +4272,12 @@ MYSQL *STDCALL mysql_real_connect(MYSQL *mysql, const char *host,
     }
   }
 #endif /* _WIN32 */
+if (!net->vio &&
+      (mysql->options.protocol == MYSQL_PROTOCOL_FUZZ)) {
+    net->vio =
+        vio_new(0, VIO_TYPE_FUZZ, 0);
+    host_info = (char *)ER_CLIENT(CR_LOCALHOST_CONNECTION);
+}
 #if defined(HAVE_SYS_UN_H)
   if (!net->vio &&
       (!mysql->options.protocol ||
