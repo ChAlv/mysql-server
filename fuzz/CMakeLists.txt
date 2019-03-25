@@ -30,3 +30,6 @@ TARGET_LINK_LIBRARIES(fuzzing_network_1 FuzzingEngine)
 #    PRIVATE
 #    ${PROJECT_SOURCE_DIR}/router/src/router/include/)
 #  #fuzz(fuzz_router_uri_tostring)
+
+MYSQL_ADD_EXECUTABLE(fuzzQuery fuzzQuery.cc)
+TARGET_LINK_LIBRARIES(fuzzQuery sql_main)
