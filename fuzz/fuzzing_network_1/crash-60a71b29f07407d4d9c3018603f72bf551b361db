@@ -1,0 +1,35 @@
+==6==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7f1fc2adf746 bp 0x7ffeda2011a0 sp 0x7ffeda200938 T0)
+==6==The signal is caused by a READ memory access.
+==6==Hint: address points to the zero page.
+SCARINESS: 10 (null-deref)
+    #0 0x7f1fc2adf745 in strlen (/lib/x86_64-linux-gnu/libc.so.6+0x8b745)
+    #1 0x4da2cc in __interceptor_strlen.part.33 /src/llvm/projects/compiler-rt/lib/asan/../sanitizer_common/sanitizer_common_interceptors.inc:363
+    #2 0x5b53b6 in strdup_root(MEM_ROOT*, char const*) /src/mysql-server/mysys/my_alloc.cc:248:34
+    #3 0x548743 in unpack_field(MYSQL*, MEM_ROOT*, bool, unsigned int, MYSQL_ROWS*, MYSQL_FIELD*) /src/mysql-server/sql-common/client.cc:2042:39
+    #4 0x549f9a in cli_read_metadata_ex /src/mysql-server/sql-common/client.cc:2146:9
+    #5 0x56116f in cli_read_metadata /src/mysql-server/sql-common/client.cc:2184:10
+    #6 0x56116f in read_com_query_metadata(MYSQL*, unsigned char*, unsigned long) /src/mysql-server/sql-common/client.cc:2212
+    #7 0x55fe25 in cli_read_query_result(MYSQL*) /src/mysql-server/sql-common/client.cc:5282:7
+    #8 0x557887 in mysql_real_query /src/mysql-server/sql-common/client.cc:5322:17
+    #9 0x53f6bc in LLVMFuzzerTestOneInput /src/mysql-server/fuzz/fuzzing_network_1.cc:32:7
+    #10 0x7b3155 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /src/libfuzzer/FuzzerLoop.cpp:529:15
+    #11 0x7741d6 in fuzzer::RunOneTest(fuzzer::Fuzzer*, char const*, unsigned long) /src/libfuzzer/FuzzerDriver.cpp:286:6
+    #12 0x77fd03 in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /src/libfuzzer/FuzzerDriver.cpp:715:9
+    #13 0x77384c in main /src/libfuzzer/FuzzerMain.cpp:19:10
+    #14 0x7f1fc2a7482f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2082f)
+    #15 0x468ab8 in _start (/out/fuzzing_network_1+0x468ab8)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x8b745) in strlen
+==6==ABORTING
+
+
+
+Solution adopted : in unpack_fiedls, add :
+
+ if (row->data == NULL || row->data[0] == NULL) {
+	set_mysql_error(mysql, CR_UNKNOWN_ERROR, unknown_sqlstate);
+	DBUG_RETURN(1);
+    }
+
+to make sure we indeed have something (if we don't have something then the server must have sent us something wrong)
