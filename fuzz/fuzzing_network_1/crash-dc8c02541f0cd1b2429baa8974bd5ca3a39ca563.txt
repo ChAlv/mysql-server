@@ -1,0 +1,31 @@
+Uninitialized bytes in __interceptor_strcmp at offset 0 inside [0x72500000009c, 1)
+==11==WARNING: MemorySanitizer: use-of-uninitialized-value
+    #0 0x511bb1 in run_plugin_auth /src/mysql-server/sql-common/client.cc:3994:22
+    #1 0x51c159 in mysql_real_connect /src/mysql-server/sql-common/client.cc:4722:7
+    #2 0x4f2bdc in LLVMFuzzerTestOneInput /src/mysql-server/fuzz/fuzzing_network_1.cc:22:10
+    #3 0x9197c3 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /src/libfuzzer/FuzzerLoop.cpp:529:15
+    #4 0x916a5f in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool*) /src/libfuzzer/FuzzerLoop.cpp:453:3
+    #5 0x91cf3b in fuzzer::Fuzzer::MutateAndTestOne() /src/libfuzzer/FuzzerLoop.cpp:669:19
+    #6 0x9221b9 in fuzzer::Fuzzer::Loop(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&) /src/libfuzzer/FuzzerLoop.cpp:814:5
+    #7 0x8c37a2 in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /src/libfuzzer/FuzzerDriver.cpp:776:6
+    #8 0x8aff90 in main /src/libfuzzer/FuzzerMain.cpp:19:10
+    #9 0x7f4f8dd3582f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2082f)
+    #10 0x46bda8 in _start (/out/fuzzing_network_1+0x46bda8)
+
+  Uninitialized value was created by a heap allocation
+    #0 0x4ac4ea in __interceptor_malloc /src/llvm/projects/compiler-rt/lib/msan/msan_interceptors.cc:911
+    #1 0x5a4e6b in my_raw_malloc(unsigned long, int) /src/mysql-server/mysys/my_malloc.cc:199:13
+    #2 0x5a4e6b in my_malloc(unsigned int, unsigned long, int) /src/mysql-server/mysys/my_malloc.cc:81
+    #3 0x7bb735 in my_net_init(NET*, Vio*) /src/mysql-server/sql-common/net_serv.cc:100:30
+    #4 0x5167c1 in mysql_real_connect /src/mysql-server/sql-common/client.cc:4545:7
+    #5 0x4f2bdc in LLVMFuzzerTestOneInput /src/mysql-server/fuzz/fuzzing_network_1.cc:22:10
+    #6 0x9197c3 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /src/libfuzzer/FuzzerLoop.cpp:529:15
+    #7 0x916a5f in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool*) /src/libfuzzer/FuzzerLoop.cpp:453:3
+    #8 0x91cf3b in fuzzer::Fuzzer::MutateAndTestOne() /src/libfuzzer/FuzzerLoop.cpp:669:19
+    #9 0x9221b9 in fuzzer::Fuzzer::Loop(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&) /src/libfuzzer/FuzzerLoop.cpp:814:5
+    #10 0x8c37a2 in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /src/libfuzzer/FuzzerDriver.cpp:776:6
+    #11 0x8aff90 in main /src/libfuzzer/FuzzerMain.cpp:19:10
+    #12 0x7f4f8dd3582f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2082f)
+
+SUMMARY: MemorySanitizer: use-of-uninitialized-value /src/mysql-server/sql-common/client.cc:3994:22 in run_plugin_auth
+Exiting
