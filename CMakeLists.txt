@@ -428,9 +428,7 @@ OPTION(DISABLE_SHARED
  "Don't build shared libraries, compile code as position-dependent" OFF)
 OPTION(FUZZING 
  "Fuzzing" OFF)
-IF (FUZZING)
-	#add_definitions(-DFUZZING_BUILD_WITH_NETWORK_INJECTION=1)
-ENDIF()
+OPTION(FUZZINGDEBUG "FuzzingDebug" OFF)
 IF(DISABLE_SHARED)
   MESSAGE("Dynamic plugins are disabled.")
 ENDIF()
@@ -1056,6 +1054,9 @@ ENDIF()
 
 IF (FUZZING)
 	ADD_SUBDIRECTORY(fuzz)
+ENDIF()
+IF (FUZZINGDEBUG)
+	ADD_SUBDIRECTORY(debugFuzz)
 ENDIF()
 
 # scripts/mysql_config depends on client and server targets loaded above.
