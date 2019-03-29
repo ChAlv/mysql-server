@@ -10,7 +10,7 @@ fi
 cd build_fuzz
 cmake .. -DDOWNLOAD_BOOST=1 -DWITH_BOOST=./ -DFUZZINGDEBUG=1
 
-make fuzz_network_1_onefile
-make fuzz_network_1_client
+make fuzz_network_1_onefile -j${nproc}
+make fuzz_network_1_client -j${nproc}
 
 make server_fuzz

@@ -44,7 +44,7 @@ void send_data(int clisocket, char *fileName) {
         free(Data);
         return;
     }
-
+    write(clisocket, Data, Size);
 }
 
 
