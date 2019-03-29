@@ -2038,8 +2038,8 @@ static int unpack_field(MYSQL *mysql, MEM_ROOT *alloc, bool default_value,
   }
 #ifndef DELETE_SUPPORT_OF_4_0_PROTOCOL
   else {
-    if (row->data == NULL || row->data[0] == NULL) {
-	set_mysql_error(mysql, CR_UNKNOWN_ERROR, unknown_sqlstate);
+    if (row->data[0] == NULL) {
+	set_mysql_error(mysql, CR_MALFORMED_PACKET, unknown_sqlstate);
 	DBUG_RETURN(1);
     }
     cli_fetch_lengths(&lengths[0], row->data, default_value ? 6 : 5);
