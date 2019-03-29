@@ -1052,11 +1052,8 @@ IF(NOT WITHOUT_SERVER)
   ADD_SUBDIRECTORY(sql)
 ENDIF()
 
-IF (FUZZING)
+IF (FUZZING OR FUZZINGDEBUG)
 	ADD_SUBDIRECTORY(fuzz)
-ENDIF()
-IF (FUZZINGDEBUG)
-	ADD_SUBDIRECTORY(debugFuzz)
 ENDIF()
 
 # scripts/mysql_config depends on client and server targets loaded above.

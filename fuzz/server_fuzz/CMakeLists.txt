@@ -1,0 +1,1 @@
+MYSQL_ADD_EXECUTABLE(server_fuzz server_fuzz.cc)
