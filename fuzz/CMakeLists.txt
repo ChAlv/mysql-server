@@ -33,6 +33,10 @@ TARGET_LINK_LIBRARIES(fuzzing_network_1 FuzzingEngine)
 
 MYSQL_ADD_EXECUTABLE(fuzzQuery fuzzQuery.cc)
 TARGET_LINK_LIBRARIES(fuzzQuery sql_main)
-TARGET_LINK_LIBRARIES(fuzzQuery libbinlogevents)
+TARGET_LINK_LIBRARIES(fuzzQuery sql_gis)
+TARGET_LINK_LIBRARIES(fuzzQuery sql_dd)
+TARGET_LINK_LIBRARIES(fuzzQuery binlog)
+TARGET_LINK_LIBRARIES(fuzzQuery slave)
+TARGET_LINK_LIBRARIES(fuzzQuery master)
 TARGET_LINK_LIBRARIES(fuzzQuery FuzzingEngine)
 
