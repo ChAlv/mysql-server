@@ -40,6 +40,12 @@ MYSQL_ADD_EXECUTABLE(fuzzQuery fuzzQuery.cc)
 TARGET_LINK_LIBRARIES(fuzzQuery sql_main)
 TARGET_LINK_LIBRARIES(fuzzQuery libbinlogevents)
 TARGET_LINK_LIBRARIES(fuzzQuery FuzzingEngine)
+
+MYSQL_ADD_EXECUTABLE(fuzz_server_1 fuzz_server_1.cc)
+TARGET_LINK_LIBRARIES(fuzz_server_1
+  sql_main sql_gis binlog rpl master slave sql_main sql_dd sql_gis mysys mysys_ssl
+  binlogevents_static ${ICU_LIBRARIES})
+TARGET_LINK_LIBRARIES(fuzz_server_1 FuzzingEngine)
 ENDIF()
 
 ADD_SUBDIRECTORY(client_fuzz)
