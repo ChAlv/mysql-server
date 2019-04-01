@@ -60,6 +60,8 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
   Channel_info *channel_info = new Channel_info_fuzz((uint8_t*)Data, Size);
 
   if (channel_info != NULL) mgr->process_new_connection(channel_info);
+
+	mgr->wait_till_no_connection();
   return result;
 }
 
