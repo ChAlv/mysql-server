@@ -165,7 +165,7 @@ extern void _db_flush_gcov_();
 #else /* No debugger */
 
 #include <stdio.h>
-#define DBUG_ENTER(a1) printf("%s\n",a1);
+#define DBUG_ENTER(a1) //printf("%s\n",a1);
 #define DBUG_LEAVE
 #define DBUG_RETURN(a1) \
   do {                  \
