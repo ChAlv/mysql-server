@@ -2048,6 +2048,7 @@ my_thread_id log_get_thread_id(THD *thd) { return thd->thread_id(); }
   @retval          int                  return value of log_line_submit()
 */
 int log_vmessage(int log_type MY_ATTRIBUTE((unused)), va_list fili) {
+  return 0;
   char buff[LOG_BUFF_MAX];
   log_item_class lic;
   log_line ll;
