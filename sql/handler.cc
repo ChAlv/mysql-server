@@ -1262,6 +1262,7 @@ void ha_pre_dd_shutdown(void) {
 */
 void trans_register_ha(THD *thd, bool all, handlerton *ht_arg,
                        const ulonglong *trxid MY_ATTRIBUTE((unused))) {
+return;
   Ha_trx_info *ha_info;
   Transaction_ctx *trn_ctx = thd->get_transaction();
   Transaction_ctx::enum_trx_scope trx_scope =

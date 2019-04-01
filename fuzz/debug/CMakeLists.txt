@@ -1,3 +1,8 @@
 MYSQL_ADD_EXECUTABLE(fuzz_network_1_onefile fuzz_network_1_onefile.cc)
 TARGET_LINK_LIBRARIES(fuzz_network_1_onefile library_mysys)
 TARGET_LINK_LIBRARIES(fuzz_network_1_onefile mysqlclient)
+
+MYSQL_ADD_EXECUTABLE(fuzz_server_1_onefile fuzz_server_1_onefile.cc)
+TARGET_LINK_LIBRARIES(fuzz_server_1_onefile
+  sql_main sql_gis binlog rpl master slave sql_main sql_dd sql_gis mysys mysys_ssl
+  binlogevents_static ${ICU_LIBRARIES})
