@@ -97,6 +97,7 @@ class Channel_info_fuzz : public Channel_info {
   Channel_info_fuzz(uint8_t *bufferParam, size_t sizeParam) {
     buffer=bufferParam;
     size=sizeParam;
+    sock_initfuzz((const uint8_t*)buffer, size);
   }
 
   virtual THD *create_thd() {
