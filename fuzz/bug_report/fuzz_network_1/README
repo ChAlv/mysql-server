@@ -1,0 +1,24 @@
+### TESTING A BUG ###
+
+To test a bug in this folder, you need, from a merge of the fuzzing and fuzzingReport branch :
+
+	(-1) (any standard mysql-server compilation requirement may apply here)
+
+	(0) go into mysql-server folder, create a build folder for compilation
+
+	(1) go in it, do : cmake .. -DFUZZING=1
+	(1bis) you may need to do : cmake .. -DDOWNLOAD_BOOST=1 -DWITH_BOOST=./ -DFUZZING=1
+
+	(2) make fuzz_network_1_client
+		(the source file can be found in fuzz/client_fuzz/fuzz_network_1_client.cc)
+
+	(3) make server_fuzz
+		(the source file can be found in fuzz/server_fuzz/server_fuzz.cc)
+
+	(4) in one shell, run ./bin/server_fuzz PATH/TO/CRASH/FILE
+	    (right now, the server port is hardcoded as 1232)
+
+	(5) in another shell, run ./bin/fuzz_network_1_client
+
+	(6) If you didn't merge fuzzingFix branch, the bug should be obvious.
+		If you did merge this branch, a mysql error should appear
