@@ -1,0 +1,15 @@
+
+### GENERALITIES AND BRANCHES USED ###
+This is the directory used for fuzzing, intended to be used with oss-fuzz. 
+There are three mains git branches used for fuzzing :
+	- fuzzing branch (which contains files necessary for fuzzing)
+	- fuzzingReport branch (which contains information on bugs found)
+	- fuzzingFix branch (which contains fix to bugs found)
+ 
+For testing locally, a branch can be made for fuzzing and, as need be, fuzzingReport and fuzzingFix can be merged into it.
+
+### TESTING A BUG ###
+
+Bugs found are categorized in the fuzzingReport branch in the fuzz folder. They are further classified depending into folders depending on which fuzz target found them.
+A finished fuzz_target can have an easy way to test it without having to do the whole fuzzing process (which also helps confirming there is indeed a problem and it isn't just an issue with the fuzzing).
+Details on how to test a particular bug for a partial fuzz target can be found in the folder of the fuzz target in the fuzzingReport branch.
