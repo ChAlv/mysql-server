@@ -6728,6 +6728,7 @@ int mysqld_main(int argc, char **argv)
 
   mysqld_socket_acceptor->connection_event_loop();
 #endif /* _WIN32 */
+return 0;
   server_operational_state = SERVER_SHUTTING_DOWN;
   sysd::notify("STOPPING=1\nSTATUS=SERVER_SHUTTING_DOWN\n");
 
