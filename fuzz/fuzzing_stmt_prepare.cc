@@ -54,6 +54,8 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
         mysql_close(&mysql);
         return 0;
     }
+    MYSQL_RES     *prepare_meta_result;
+    int column_count;
     column_count= mysql_num_fields(prepare_meta_result);
     MYSQL_BIND    bind[column_count];
     memset(bind, 0, sizeof(bind));
