@@ -26,7 +26,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     MYSQL_STMT *stmt = mysql_stmt_init(&mysql);
     if (!stmt)
     {
-      printf(stderr, " mysql_stmt_init(), out of memory\n");
+      printf(" mysql_stmt_init(), out of memory\n");
       mysql_stmt_close(stmt);
       mysql_close(&mysql);
       return 0;
