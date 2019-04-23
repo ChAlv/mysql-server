@@ -19,8 +19,8 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     sock_initfuzz(Data,Size);
     char* DROP_SAMPLE_TABLE="DROP TABLE IF EXISTS test_table";
     char* CREATE_SAMPLE_TABLE="CREATE TABLE test_table(col1 INT,col2 VARCHAR(40),col3 SMALLINT,col4 TIMESTAMP)";
-    char * INSERT_SAMPLE "INSERT INTO test_table(col1,col2,col3) VALUES(?,?,?)";
-    MYSQL_STMT    *stmt;
+    char * INSERT_SAMPLE="INSERT INTO test_table(col1,col2,col3) VALUES(?,?,?)";
+
     MYSQL_BIND    bind[3];
     my_ulonglong  affected_rows;
     int           param_count;
@@ -37,7 +37,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
                 return 0; //ce n'est pas une erreur en soi
     }
 
-     stmt = mysql_stmt_init(mysql);
+     MYSQL_STMT *stmt = mysql_stmt_init(&mysql);
      if (!stmt)
      {
        mysql_stmt_close(stmt);
@@ -120,9 +120,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
      /* Specify data values for second row,
         then re-execute the statement */
      int_data= 1000;
-     strncpy(str_data, "
-             The most popular Open Source database",
-             STRING_SIZE);
+     strncpy(str_data, "The most popular Open Source database", STRING_SIZE);
      str_length= strlen(str_data);
      small_data= 1000;         /* smallint */
      is_null= 0;               /* reset */
