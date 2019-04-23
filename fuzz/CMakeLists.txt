@@ -36,6 +36,11 @@ TARGET_LINK_LIBRARIES(fuzzing_stmt_fetch library_mysys)
 TARGET_LINK_LIBRARIES(fuzzing_stmt_fetch mysqlclient)
 TARGET_LINK_LIBRARIES(fuzzing_stmt_fetch FuzzingEngine)
 
+MYSQL_ADD_EXECUTABLE(fuzzing_stmt_execute fuzzing_stmt_execute.cc)
+TARGET_LINK_LIBRARIES(fuzzing_stmt_execute library_mysys)
+TARGET_LINK_LIBRARIES(fuzzing_stmt_execute mysqlclient)
+TARGET_LINK_LIBRARIES(fuzzing_stmt_execute FuzzingEngine)
+
 MYSQL_ADD_EXECUTABLE(fuzzQuery fuzzQuery.cc)
 TARGET_LINK_LIBRARIES(fuzzQuery sql_main)
 TARGET_LINK_LIBRARIES(fuzzQuery libbinlogevents)
