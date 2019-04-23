@@ -26,15 +26,12 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     MYSQL_STMT *stmt = mysql_stmt_init(&mysql);
     if (!stmt)
     {
-      printf(" mysql_stmt_init(), out of memory\n");
       mysql_stmt_close(stmt);
       mysql_close(&mysql);
       return 0;
     }
     if (mysql_stmt_prepare(stmt, "SELECT col1, col2, col3, col4 FROM Cars",(ulong)strlen("SELECT col1, col2, col3, col4 FROM Cars")))
     {
-        //printf("Error:%d %s\n",mysql_errno(&mysql),mysql_error(&mysql));
-        printf(" %s\n", mysql_stmt_error(stmt));
         mysql_stmt_close(stmt);
         mysql_close(&mysql);
         return 0;
