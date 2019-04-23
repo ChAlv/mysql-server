@@ -14,6 +14,16 @@ using namespace std;
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     MYSQL mysql;
+    MYSQL_BIND    bind[4];
+    MYSQL_RES     *prepare_meta_result;
+    MYSQL_TIME    ts;
+    unsigned long length[4];
+    int           param_count, column_count, row_count;
+    short         small_data;
+    int           int_data;
+    char          str_data[STRING_SIZE];
+    bool          is_null[4];
+    bool          error[4];
       mysql_init(&mysql);
       mysql.options.protocol = MYSQL_PROTOCOL_FUZZ;
       sock_initfuzz(Data,Size);
@@ -36,7 +46,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
         mysql_close(&mysql);
         return 0;
     }
-    MYSQL_RES     * prepare_meta_result;
     prepare_meta_result = mysql_stmt_result_metadata(stmt);
     if (!prepare_meta_result)
     {
@@ -53,9 +62,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
         mysql_close(&mysql);
         return 0;
     }
-    int column_count;
     column_count= mysql_num_fields(prepare_meta_result);
-    MYSQL_BIND    bind[column_count];
     memset(bind, 0, sizeof(bind));
     /* INTEGER COLUMN */
     bind[0].buffer_type= MYSQL_TYPE_LONG;
@@ -88,8 +95,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 
     if (mysql_stmt_bind_result(stmt, bind))
     {
-      printf(" mysql_stmt_bind_result() failed\n");
-      printf(" %s\n", mysql_stmt_error(stmt));
       mysql_free_result(prepare_meta_result);
       mysql_stmt_close(stmt);
       mysql_close(&mysql);
@@ -97,14 +102,14 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     }
     if (mysql_stmt_store_result(stmt))
     {
-      fprintf(stderr, " mysql_stmt_store_result() failed\n");
-      fprintf(stderr, " %s\n", mysql_stmt_error(stmt));
-      exit(0);
+      mysql_free_result(prepare_meta_result);
+            mysql_stmt_close(stmt);
+            mysql_close(&mysql);
+            return 0;
     }
     while (!mysql_stmt_fetch(stmt))
     {
     row_count++;
-      fprintf(stdout, "  row %d\n", row_count);
 
       /* column 1 */
       fprintf(stdout, "   column1 (integer)  : ");
