@@ -21,6 +21,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     int           param_count, column_count, row_count;
     short         small_data;
     int           int_data;
+    int STRING_SIZE=50;
     char          str_data[STRING_SIZE];
     bool          is_null[4];
     bool          error[4];

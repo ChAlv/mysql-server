@@ -26,9 +26,11 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     int           param_count;
     short         small_data;
     int           int_data;
+    int STRING_SIZE=50;
     char          str_data[STRING_SIZE];
     unsigned long str_length;
     bool          is_null;
+
 
     if (!mysql_real_connect(&mysql,"localhost","root","root","",0,NULL,0))
     {
