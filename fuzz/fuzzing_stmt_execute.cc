@@ -48,7 +48,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
      {
        mysql_stmt_close(stmt);
        mysql_close(&mysql);
-       exit(0);
+       return 0;
      }
 
      param_count= mysql_stmt_param_count(stmt);
