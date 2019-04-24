@@ -1,0 +1,24 @@
+==12==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7f1ac9c78746 bp 0x7ffd9d712f60 sp 0x7ffd9d712718 T0)
+==12==The signal is caused by a READ memory access.
+==12==Hint: address points to the zero page.
+SCARINESS: 10 (null-deref)
+    #0 0x7f1ac9c78745 in strlen (/lib/x86_64-linux-gnu/libc.so.6+0x8b745)
+    #1 0x47c0e8 in strlen /src/llvm/projects/compiler-rt/lib/asan/../sanitizer_common/sanitizer_common_interceptors.inc
+    #2 0x589506 in strdup_root(MEM_ROOT*, char const*) /src/mysql-server/mysys/my_alloc.cc:248:34
+    #3 0x51c893 in unpack_field(MYSQL*, MEM_ROOT*, bool, unsigned int, MYSQL_ROWS*, MYSQL_FIELD*) /src/mysql-server/sql-common/client.cc:2042:39
+    #4 0x51e0ea in cli_read_metadata_ex /src/mysql-server/sql-common/client.cc:2146:9
+    #5 0x541ae0 in cli_read_prepare_result(MYSQL*, MYSQL_STMT*) /src/mysql-server/libmysql/libmysql.cc:1327:17
+    #6 0x542f4d in mysql_stmt_prepare /src/mysql-server/libmysql/libmysql.cc:1500:7
+    #7 0x512b24 in LLVMFuzzerTestOneInput /src/mysql-server/fuzz/fuzzing_stmt_fetch.cc:44:9
+    #8 0x789ca1 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /src/libfuzzer/FuzzerLoop.cpp:552:15
+    #9 0x787be0 in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool*) /src/libfuzzer/FuzzerLoop.cpp:470:3
+    #10 0x78b8a4 in fuzzer::Fuzzer::MutateAndTestOne() /src/libfuzzer/FuzzerLoop.cpp:694:19
+    #11 0x78eb58 in fuzzer::Fuzzer::Loop(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&) /src/libfuzzer/FuzzerLoop.cpp:839:5
+    #12 0x754ade in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /src/libfuzzer/FuzzerDriver.cpp:778:6
+    #13 0x7479a7 in main /src/libfuzzer/FuzzerMain.cpp:19:10
+    #14 0x7f1ac9c0d82f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2082f)
+    #15 0x469498 in _start (/out/fuzzing_stmt_fetch+0x469498)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x8b745) in strlen
+==12==ABORTING
