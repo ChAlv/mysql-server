@@ -29,7 +29,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     
     //printf("Timeout : %d\n", mysql.thd.variables.net_wait_timeout);
     
-    if (mysql_send_query(&mysql, "SELECT * FROM Cars",(ulong)strlen("SELECT * FROM Cars")))
+    if (mysql_real_query(&mysql, "SELECT * FROM Cars",(ulong)strlen("SELECT * FROM Cars")))
     {
         printf("Error:%d %s\n",mysql_errno(&mysql),mysql_error(&mysql));
     }
