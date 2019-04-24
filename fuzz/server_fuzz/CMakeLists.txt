@@ -1,1 +1,1 @@
-MYSQL_ADD_EXECUTABLE(server_fuzz server_fuzz.cc)
+MYSQL_ADD_EXECUTABLE(evil_server evil_server.cc)

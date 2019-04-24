@@ -20,19 +20,10 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
   sock_initfuzz(Data,Size);
 
     if (!mysql_real_connect(&mysql,"localhost","root","root","",0,NULL,0)) {
-	///	printf( "Failed to connect to MySQL: Error: %s\n",
-	//	mysql_error(&mysql)); 
-      		return 0; //ce n'est pas une erreur en soi
-  	}
+            return 0;
+    }
 
-
-
-	//printf("Timeout : %d\n", mysql.thd.variables.net_wait_timeout);
-
-  if (mysql_query(&mysql, "SELECT * FROM Cars")) 
-  {
-  	printf("Error:%d %s\n",mysql_errno(&mysql),mysql_error(&mysql));
-  }
+  mysql_query(&mysql, "SELECT * FROM Cars")
   mysql_close(&mysql);
   return 0;
 }
