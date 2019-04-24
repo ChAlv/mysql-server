@@ -29,10 +29,10 @@ TARGET_LINK_LIBRARIES(fuzz_network_1 FuzzingEngine)
  #   PRIVATE
 #    ${PROJECT_SOURCE_DIR}/router/src/router/include/)
 
-MYSQL_ADD_EXECUTABLE(fuzzing_send_query fuzzing_send_query.cc)
-TARGET_LINK_LIBRARIES(fuzzing_send_query library_mysys)
-TARGET_LINK_LIBRARIES(fuzzing_send_query mysqlclient)
-TARGET_LINK_LIBRARIES(fuzzing_send_query FuzzingEngine)
+MYSQL_ADD_EXECUTABLE(fuzzing_real_query fuzzing_real_query.cc)
+TARGET_LINK_LIBRARIES(fuzzing_real_query library_mysys)
+TARGET_LINK_LIBRARIES(fuzzing_real_query mysqlclient)
+TARGET_LINK_LIBRARIES(fuzzing_real_query FuzzingEngine)
 
 MYSQL_ADD_EXECUTABLE(fuzzing_stmt_prepare fuzzing_stmt_prepare.cc)
 TARGET_LINK_LIBRARIES(fuzzing_stmt_prepare library_mysys)
