@@ -1,0 +1,20 @@
+==11==ERROR: AddressSanitizer: SEGV on unknown address 0x62504316d22d (pc 0x00000056e137 bp 0x7ffeece70cb0 sp 0x7ffeece70c80 T0)
+==11==The signal is caused by a READ memory access.
+SCARINESS: 20 (wild-addr-read)
+    #0 0x56e136 in net_field_length(unsigned char**) /src/mysql-server/mysys/pack.cc:39:7
+    #1 0x513c65 in read_ok_ex /src/mysql-server/sql-common/client.cc:770:29
+    #2 0x532efd in cli_read_query_result(MYSQL*) /src/mysql-server/sql-common/client.cc:5249:5
+    #3 0x52ab07 in mysql_real_query /src/mysql-server/sql-common/client.cc:5322:17
+    #4 0x5129e1 in LLVMFuzzerTestOneInput /src/mysql-server/fuzz/fuzzing_real_query.cc:32:9
+    #5 0x788dd1 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /src/libfuzzer/FuzzerLoop.cpp:552:15
+    #6 0x786d10 in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool*) /src/libfuzzer/FuzzerLoop.cpp:470:3
+    #7 0x78a9d4 in fuzzer::Fuzzer::MutateAndTestOne() /src/libfuzzer/FuzzerLoop.cpp:694:19
+    #8 0x78dc88 in fuzzer::Fuzzer::Loop(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&) /src/libfuzzer/FuzzerLoop.cpp:839:5
+    #9 0x753c0e in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /src/libfuzzer/FuzzerDriver.cpp:778:6
+    #10 0x746ad7 in main /src/libfuzzer/FuzzerMain.cpp:19:10
+    #11 0x7f5c2525382f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2082f)
+    #12 0x469468 in _start (/out/fuzzing_real_query+0x469468)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /src/mysql-server/mysys/pack.cc:39:7 in net_field_length(unsigned char**)
+==11==ABORTING
