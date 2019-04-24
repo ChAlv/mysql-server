@@ -52,18 +52,20 @@ int init_serv() {
 
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
-  static int inits = init_serv();
-  if (inits) return inits;
+  //static int inits = init_serv();
+  //if (inits) return inits;
 
-  Connection_handler_manager *mgr =
-        Connection_handler_manager::get_instance();
+  //Connection_handler_manager *mgr =
+  //      Connection_handler_manager::get_instance();
   Channel_info *channel_info = new Channel_info_fuzz((uint8_t*)Data, Size);
 	printf("Process new connection...\n");
-  if (channel_info != NULL) mgr->process_new_connection(channel_info);
+ // if (channel_info != NULL) mgr->process_new_connection(channel_info);
 
-	printf("Wait till no connection...\n");
-	mgr->wait_till_no_connection();
-	printf("End!\n");
+	THD *thd = channel_info->create_thd();
+
+//	printf("Wait till no connection...\n");
+//	mgr->wait_till_no_connection();
+//	printf("End!\n");
   return result;
 }
 
