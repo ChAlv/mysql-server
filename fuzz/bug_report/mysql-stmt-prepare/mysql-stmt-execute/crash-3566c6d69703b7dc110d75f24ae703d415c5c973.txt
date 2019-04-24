@@ -1,0 +1,21 @@
+==11==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x00000051c15b bp 0x7ffc5fc68c70 sp 0x7ffc5fc68ba0 T0)
+==11==The signal is caused by a READ memory access.
+==11==Hint: address points to the zero page.
+SCARINESS: 10 (null-deref)
+    #0 0x51c15a in unpack_field(MYSQL*, MEM_ROOT*, bool, unsigned int, MYSQL_ROWS*, MYSQL_FIELD*) /src/mysql-server/sql-common/client.cc:2045:49
+    #1 0x51d84a in cli_read_metadata_ex /src/mysql-server/sql-common/client.cc:2146:9
+    #2 0x541040 in cli_read_prepare_result(MYSQL*, MYSQL_STMT*) /src/mysql-server/libmysql/libmysql.cc:1315:11
+    #3 0x5426ad in mysql_stmt_prepare /src/mysql-server/libmysql/libmysql.cc:1500:7
+    #4 0x512aa8 in LLVMFuzzerTestOneInput /src/mysql-server/fuzz/fuzzing_stmt_execute.cc:47:10
+    #5 0x789401 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /src/libfuzzer/FuzzerLoop.cpp:552:15
+    #6 0x787340 in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool*) /src/libfuzzer/FuzzerLoop.cpp:470:3
+    #7 0x78b004 in fuzzer::Fuzzer::MutateAndTestOne() /src/libfuzzer/FuzzerLoop.cpp:694:19
+    #8 0x78e2b8 in fuzzer::Fuzzer::Loop(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, fuzzer::fuzzer_allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&) /src/libfuzzer/FuzzerLoop.cpp:839:5
+    #9 0x75423e in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /src/libfuzzer/FuzzerDriver.cpp:778:6
+    #10 0x747107 in main /src/libfuzzer/FuzzerMain.cpp:19:10
+    #11 0x7fbcc703f82f in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2082f)
+    #12 0x469468 in _start (/out/fuzzing_stmt_execute+0x469468)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /src/mysql-server/sql-common/client.cc:2045:49 in unpack_field(MYSQL*, MEM_ROOT*, bool, unsigned int, MYSQL_ROWS*, MYSQL_FIELD*)
+==11==ABORTING
