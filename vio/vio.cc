@@ -288,10 +288,10 @@ static bool vio_init(Vio *vio, enum enum_vio_type type, my_socket sd,
   vio->write=vio_write_buff_fuzz;
   vio->fastsend = vio_fastsend_fuzz;
   vio->viokeepalive = vio_keepalive_fuzz;
-  vio->should_retry = vio_should_retry; // HERE HERE HERE HERE  
+  vio->should_retry = vio_should_retry; // possible problem  
   vio->was_timeout = vio_was_timeout_fuzz;
   vio->vioshutdown = vio_shutdown_fuzz;
-  vio->peer_addr = vio_peer_addr; // HERE HERE HERE
+  vio->peer_addr = vio_peer_addr; // possible problem
   vio->timeout=vio_socket_timeout_fuzz;
   vio->io_wait = vio_io_wait_fuzz;
   vio->is_connected = vio_is_connected_fuzz;

@@ -31,29 +31,15 @@
 #include <sys/ioctl.h>
 #endif
 
-//#include "mysql/psi/mysql_socket.h"
-
-
 static const uint8_t *fuzzBuffer;
 static size_t fuzzSize;
 static size_t fuzzPos;
 
 
 void sock_initfuzz(const uint8_t *Data, size_t Size) {
-	fuzzPos = 0;
-	fuzzSize = Size;
-	fuzzBuffer = Data;
-}
-
-int fuzz_recv(void *bufp, size_t size) {
-	if (size > fuzzSize - fuzzPos) {
-		size = fuzzSize - fuzzPos;
-	}
-	if (fuzzPos < fuzzSize) {
-		memcpy(bufp, fuzzBuffer + fuzzPos, size);
-	}
-	fuzzPos += size;
-	return size;
+    fuzzPos = 0;
+    fuzzSize = Size;
+    fuzzBuffer = Data;
 }
 
 bool vio_connect_fuzz(Vio *vio, struct sockaddr *addr, socklen_t len,
@@ -68,57 +54,58 @@ bool vio_connect_fuzz(Vio *vio, struct sockaddr *addr, socklen_t len,
   /* Initiate the connection. */
   ret=0;
 
-
   DBUG_RETURN(MY_TEST(ret));
 }
 
 
 int vio_socket_timeout_fuzz(Vio *vio, uint which, bool b) {
-	DBUG_ENTER("Socket timeout\n");
-	return 1;
+    DBUG_ENTER("vio_socket_timeout_fuzz\n");
+    return 1;
 }
 
 
-size_t vio_read_buff_fuzz(Vio *vio, uchar *buf, size_t size) {
-	DBUG_ENTER("Read buff.\n");
-	return fuzz_recv(buf, size);
-}
-size_t vio_write_buff_fuzz(Vio *vio, const uchar *buf, size_t size) {
-	DBUG_ENTER("Write buff\n");
-	return size;
+size_t vio_read_buff_fuzz(Vio *vio, uchar *bufp, size_t size) {
+    DBUG_ENTER("vio_read_buff_fuzz.\n");
+    if (size > fuzzSize - fuzzPos) {
+        size = fuzzSize - fuzzPos;
+    }
+    if (fuzzPos < fuzzSize) {
+        memcpy(bufp, fuzzBuffer + fuzzPos, size);
+    }
+    fuzzPos += size;
+    return size;
 }
 
+size_t vio_write_buff_fuzz(Vio *vio, const uchar *bufp, size_t size) {
+    DBUG_ENTER("vio_write_buff_fuzz\n");
+    return size;
+}
 
 bool vio_is_connected_fuzz(Vio *vio) {
-	DBUG_ENTER("Is connected.\n");
-	return true;
+    DBUG_ENTER("vio_is_connected_fuzz\n");
+    return true;
 }
 
 bool vio_was_timeout_fuzz(Vio *vio) { 
-	DBUG_ENTER("was timeout?\n");
-	return false; 
+    DBUG_ENTER("vio_was_timeout_fuzz\n");
+    return false; 
 }
 
-
 int vio_shutdown_fuzz(Vio *vio) {
-		  DBUG_ENTER("shutdown vio");
-
-  DBUG_ENTER("Shutdown\n");
-  int r = 0;
-  return 0;
+    DBUG_ENTER("vio_shutdown_fuzz");
+    return 0;
 }
 
 int vio_keepalive_fuzz(Vio *vio, bool set_keep_alive) {
-  DBUG_ENTER("Keepalive\n");
-  int r = 0;
-  return r;
+    DBUG_ENTER("vio_keepalive_fuzz\n");
+    return 0;
 }
 int vio_io_wait_fuzz(Vio *vio, enum enum_vio_io_event event, int timeout) {
-	  DBUG_ENTER("vio_io_wait");
-	return 1;
+    DBUG_ENTER("vio_io_wait_fuzz");
+    return 1;
 }
 
 int vio_fastsend_fuzz(Vio *vio) {
-	DBUG_ENTER("Fastsend\n");
-	return 0;
+    DBUG_ENTER("vio_fastsend_fuzz\n");
+    return 0;
 }
