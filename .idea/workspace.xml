@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6604a6d5-e5d8-4e35-8b76-bc15181cec83" name="Default Changelist" comment="Merge branch 'fuzzing' of https://github.com/ChAlv/mysql-server into fuzzing_send_query&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;fuzz/CMakeLists.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuzz/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fuzz/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,20 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fuzz/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="339" column="24" lean-forward="true" selection-start-line="339" selection-start-column="24" selection-end-line="339" selection-end-column="24" />
+            <state relative-caret-position="545">
+              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -50,8 +42,8 @@
         <option value="$PROJECT_DIR$/fuzz/fuzzing_stmt_fetch.cc" />
         <option value="$PROJECT_DIR$/fuzz/fuzzing_stmt_execute.cc" />
         <option value="$PROJECT_DIR$/fuzz/fuzzing_send_query.cc" />
-        <option value="$PROJECT_DIR$/fuzz/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/fuzz/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -76,17 +68,7 @@
             <path>
               <item name="mysql-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="mysql-server" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysql-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysql-server" type="462c0819:PsiDirectoryNode" />
               <item name="fuzz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysql-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysql-server" type="462c0819:PsiDirectoryNode" />
-              <item name="testclients" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -99,7 +81,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556140449833" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556190460642" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -131,6 +113,7 @@
       <workItem from="1556048599908" duration="2442000" />
       <workItem from="1556063076943" duration="235000" />
       <workItem from="1556133881542" duration="2056000" />
+      <workItem from="1556190249211" duration="156000" />
     </task>
     <task id="LOCAL-00001" summary="modif de la fuzz target">
       <created>1554650844039</created>
@@ -248,13 +231,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10810000" />
+    <option name="totallyTimeSpent" value="11282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -338,13 +321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuzz/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -356,6 +332,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="339" column="24" lean-forward="true" selection-start-line="339" selection-start-column="24" selection-end-line="339" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuzz/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
         </state>
       </provider>
     </entry>
