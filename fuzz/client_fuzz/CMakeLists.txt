@@ -1,2 +1,2 @@
-MYSQL_ADD_EXECUTABLE(fuzz_network_1_client fuzz_network_1_client.cc)
-TARGET_LINK_LIBRARIES(fuzz_network_1_client mysqlclient)
+MYSQL_ADD_EXECUTABLE(simple_select simple_select.cc)
+TARGET_LINK_LIBRARIES(simple_select mysqlclient)

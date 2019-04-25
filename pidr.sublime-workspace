@@ -1,0 +1,1313 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Target",
+				"target_link_libraries"
+			],
+			[
+				"fuzz",
+				"fuzzQuery"
+			],
+			[
+				"size",
+				"sizereq"
+			],
+			[
+				"inc",
+				"inc\t#include \"…\""
+			],
+			[
+				"ion-butt",
+				"ionic-css-button:dark\tionic-css-button-dark"
+			],
+			[
+				"post",
+				"post_id"
+			],
+			[
+				"cach",
+				"cache_single"
+			],
+			[
+				"cache",
+				"cached_Arts"
+			],
+			[
+				"get",
+				"get_by_id"
+			],
+			[
+				"po",
+				"post_id"
+			],
+			[
+				"im",
+				"img_url"
+			],
+			[
+				"map",
+				"maps_url"
+			],
+			[
+				"ip",
+				"ip_url"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"render",
+				"render_form"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"G",
+				"GqlQuery"
+			],
+			[
+				"vali",
+				"valid_pw"
+			],
+			[
+				"make",
+				"make_pw_hash"
+			],
+			[
+				"ver",
+				"verify_mail"
+			],
+			[
+				"usr",
+				"usr_err"
+			],
+			[
+				"pwd_",
+				"pwd_match"
+			],
+			[
+				"vis",
+				"visits_cookie"
+			],
+			[
+				"visi",
+				"visits"
+			],
+			[
+				"cooki",
+				"cookie_val"
+			],
+			[
+				"ha",
+				"hash_str"
+			],
+			[
+				"v",
+				"visits"
+			],
+			[
+				"texta",
+				"text-align\tproperty"
+			],
+			[
+				"ascii",
+				"asciichan"
+			],
+			[
+				"rende",
+				"render_front"
+			],
+			[
+				"A",
+				"Ascii"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"templa",
+				"template_dir"
+			],
+			[
+				"out",
+				"out_hid"
+			],
+			[
+				"wr",
+				"write"
+			],
+			[
+				"psd",
+				"psd_re"
+			],
+			[
+				"write",
+				"write_form"
+			],
+			[
+				"writ",
+				"write_form"
+			],
+			[
+				"mail",
+				"mail_re"
+			],
+			[
+				"passw",
+				"password"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"wri",
+				"write_form"
+			],
+			[
+				"erro",
+				"errors"
+			],
+			[
+				"vald",
+				"valid_year"
+			],
+			[
+				"valid",
+				"valid_day"
+			],
+			[
+				"va",
+				"valid_month"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"loc",
+				"locationizer"
+			],
+			[
+				"HT",
+				"HTMLworkEmployer"
+			],
+			[
+				"job",
+				"jobs"
+			],
+			[
+				"Wor",
+				"workExperience"
+			],
+			[
+				"getEl",
+				"getElementsByClassName"
+			],
+			[
+				"forma",
+				"formatedRole"
+			],
+			[
+				"fo",
+				"formatedName"
+			],
+			[
+				"form",
+				"formatedRole"
+			],
+			[
+				"formated",
+				"formatedName"
+			],
+			[
+				"fun",
+				"funThoughts"
+			],
+			[
+				"aws",
+				"awsomeThoughts"
+			],
+			[
+				"d",
+				"d_name"
+			],
+			[
+				"fil",
+				"file-"
+			],
+			[
+				"de",
+				"detail"
+			],
+			[
+				"re",
+				"required_argument"
+			],
+			[
+				"arg",
+				"argv"
+			],
+			[
+				"ar",
+				"argv"
+			],
+			[
+				"name",
+				"nameArg"
+			],
+			[
+				"option",
+				"option_courante"
+			],
+			[
+				"toP",
+				"toP"
+			],
+			[
+				"to",
+				"toP"
+			],
+			[
+				"temp",
+				"temp_size"
+			],
+			[
+				"gr",
+				"gr_name"
+			],
+			[
+				"my",
+				"myPrintf"
+			],
+			[
+				"file",
+				"fileStr"
+			],
+			[
+				"str",
+				"strcmp"
+			],
+			[
+				"m",
+				"m"
+			],
+			[
+				"opt",
+				"optarg"
+			],
+			[
+				"if",
+				"ifThen"
+			],
+			[
+				"ifth",
+				"ifThenElse"
+			],
+			[
+				"optio",
+				"option_index"
+			],
+			[
+				"add",
+				"addRate"
+			],
+			[
+				"CC",
+				"CCFLAGS"
+			],
+			[
+				"lbl_",
+				"lbl_genre"
+			],
+			[
+				"gtk_wi",
+				"gtk_widget_show"
+			],
+			[
+				"Gtk",
+				"GtkLabel"
+			],
+			[
+				"gtk_image",
+				"gtk_image_new_from_file"
+			],
+			[
+				"sho",
+				"show_sugg"
+			],
+			[
+				"w",
+				"website"
+			],
+			[
+				"gtk",
+				"gtk_builder_get_object"
+			],
+			[
+				"mo",
+				"move_to"
+			],
+			[
+				"movie",
+				"MovieId"
+			],
+			[
+				"B",
+				"Bibli"
+			],
+			[
+				"entry_psw_",
+				"entry_psw_sup"
+			],
+			[
+				"entry_psd_",
+				"entry_psd_sin"
+			],
+			[
+				"note",
+				"note_movie"
+			],
+			[
+				"lbl",
+				"lbl_mail_taken"
+			],
+			[
+				"ptr",
+				"ptr"
+			],
+			[
+				"en",
+				"entry_psd"
+			],
+			[
+				"GTK",
+				"GTK_ENTRY"
+			],
+			[
+				"sign",
+				"sign_up_failed"
+			],
+			[
+				"notebook",
+				"notebook1"
+			],
+			[
+				"gtk_bui",
+				"gtk_builder_get_object"
+			],
+			[
+				"entry",
+				"entry_psw2"
+			],
+			[
+				"Gt",
+				"GtkEntry"
+			],
+			[
+				"wi",
+				"widget"
+			],
+			[
+				"userData",
+				"userData"
+			],
+			[
+				"S",
+				"SGlobalData"
+			],
+			[
+				"GTG",
+				"GTK_WIDGET"
+			],
+			[
+				"gtk_b",
+				"gtk_builder_get_object"
+			],
+			[
+				"s",
+				"sign_up_clicked"
+			],
+			[
+				"g_lbl",
+				"g_lbl_hello"
+			],
+			[
+				"gtk_buil",
+				"gtk_builder_get_object"
+			],
+			[
+				"do",
+				"donnees"
+			],
+			[
+				"print",
+				"print_sorted_tree"
+			],
+			[
+				"prin",
+				"print_sorted_tree"
+			],
+			[
+				"N",
+				"NULL"
+			],
+			[
+				"ex",
+				"ex"
+			],
+			[
+				"c",
+				"c"
+			],
+			[
+				"code",
+				"code2"
+			],
+			[
+				"Trace",
+				"TraceSenCity"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"Blog",
+				"BlogServiceImpl"
+			],
+			[
+				"nb",
+				"nbExemplaires"
+			],
+			[
+				"p",
+				"public"
+			],
+			[
+				"C",
+				"ColoredLight"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"Task",
+				"TaskList"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "fuzz/CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 1698,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/julien/PIDR/oss_fuzz/projects/mysql-server/Dockerfile",
+			"settings":
+			{
+				"buffer_size": 1013,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/julien/PIDR/oss_fuzz/projects/mysql-server/project.yaml",
+			"settings":
+			{
+				"buffer_size": 276,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "fuzz/fuzzing_network_1.cc",
+			"settings":
+			{
+				"buffer_size": 861,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/julien/pidr_err.md",
+			"settings":
+			{
+				"buffer_size": 3797,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sql/CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 28024,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "fuzz/fuzz_query.cc",
+			"settings":
+			{
+				"buffer_size": 777,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/julien/PIDR/oss_fuzz/projects/mysql-server/build.sh",
+			"settings":
+			{
+				"buffer_size": 1000,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sql/sql_parse.cc",
+			"settings":
+			{
+				"buffer_size": 264893,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sql/events.cc",
+			"settings":
+			{
+				"buffer_size": 41799,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"control ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 212.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"Package Control.sublime-package",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/julien/PIDR"
+	],
+	"file_history":
+	[
+		"/home/julien/PIDR/mysql/CMakeLists.txt",
+		"/home/julien/PIDR/mysql/fuzz/fuzzQuery.cc",
+		"/home/julien/PIDR/mysql/sql/sql_prepare.cc",
+		"/home/julien/PIDR/mysql/sql-common/client.cc",
+		"/home/julien/PIDR/mysql/sql/sql_class.h",
+		"/home/julien/PIDR/mysql/sql/sql_parse.h",
+		"/home/julien/PIDR/mysql/sql/sql_parse.g",
+		"/home/julien/PIDR/mysql/.gitignore",
+		"/home/julien/PIDR/mysql/sql/CMakeLists.txt",
+		"/home/julien/PIDR/mysql/fuzz/fuzzingNetwork.cc",
+		"/home/julien/PIDR/mysql/fuzz/fuzzingPremierTest.cc",
+		"/home/julien/PIDR/mysql/sql/fuzzQuery.cc",
+		"/home/julien/PIDR/oss_fuzz/projects/mysql-server/build.sh",
+		"/home/julien/PIDR/mysql/fuzz/CMakeLists.txt",
+		"/home/julien/PIDR/mysql/router/src/mock_server/src/CMakeLists.txt",
+		"/home/julien/PIDR/mysql/sql/sql_prepare.h",
+		"/home/julien/PIDR/mysql/libmysql/libmysql.cc",
+		"/home/julien/PIDR/mysql/router/src/router/src/CMakeLists.txt",
+		"/home/julien/PIDR/mysql/router/cmake/Plugin.cmake",
+		"/home/julien/PIDR/mysql/router/src/harness/CMakeLists.txt",
+		"/home/julien/PIDR/mysql/run_doxygen.cmake",
+		"/home/julien/PIDR/mysql/include/my_compiler.h",
+		"/home/julien/PIDR/mysql/pidr.sublime-project",
+		"/home/julien/Projet_Anglais/src/main.ts",
+		"/home/julien/Projet_Anglais/.gitignore",
+		"/home/julien/restore.sh",
+		"/home/julien/Projet_Anglais/tslint.json",
+		"/home/julien/Web/AsciiChan/templates/ascii.html",
+		"/home/julien/Web/PS6/templates/main.html",
+		"/home/julien/Web/PS6/templates/newpost.html",
+		"/home/julien/Web/PS6/main.py",
+		"/home/julien/Web/Engine/main.py",
+		"/home/julien/Web/Engine/app.yaml",
+		"/home/julien/Web/Engine/index.html",
+		"/home/julien/Web/PS4/main.py",
+		"/home/julien/Web/PS3/main.py",
+		"/home/julien/Web/PS5/templates/base.html",
+		"/home/julien/Web/PS5/templates/main.html",
+		"/home/julien/Web/Engine/templates/shop_list.html",
+		"/home/julien/Downloads/hw5/static/main.css",
+		"/home/julien/Downloads/hw5/templates/base.html",
+		"/home/julien/Downloads/hw5/index.yaml",
+		"/home/julien/Web/PS5/main.py",
+		"/home/julien/Web/PS3/templates/main.html",
+		"/home/julien/Web/PS5/templates/login.html",
+		"/home/julien/Web/PS4/templates/signup.html",
+		"/home/julien/Web/PS3/templates/newpost.html",
+		"/home/julien/Web/PS4/templates/login.html",
+		"/home/julien/Web/PS5/templates/signup.html",
+		"/home/julien/Web/PS3/app.yaml",
+		"/home/julien/Web/PS3/templates/form.html",
+		"/home/julien/Web/PS3/templates/base.html",
+		"/home/julien/Web/set_user/main.py",
+		"/home/julien/Web/set_user/ma",
+		"/home/julien/Web/set_user/templates/main.html",
+		"/home/julien/Web/set_user/templates/signup.html",
+		"/home/julien/Web/set_user/templates/base.html",
+		"/home/julien/Web/set_user/templates/login.html",
+		"/home/julien/Web/Signup/main.py",
+		"/home/julien/Web/Blog/main.py",
+		"/home/julien/Web/set_user/app.yaml",
+		"/home/julien/Web/Engine/templates/base.html",
+		"/home/julien/mysql/fuzz/fuzzingPremierTest.cc",
+		"/home/julien/mysql/fuzz/fuzzingTest2.cc",
+		"/home/julien/Web/Engine/templates/ascii.html",
+		"/home/julien/Web/Blog/templates/newpost.html",
+		"/home/julien/Web/Blog/templates/main.html",
+		"/home/julien/Web/Blog/templates/form.html",
+		"/home/julien/Web/Blog/app.yaml",
+		"/home/julien/Web/Blog/newpost.html",
+		"/home/julien/Web/Engine/templates/fizzbuzz.html",
+		"/home/julien/Web/Blog/templates/base.html",
+		"/home/julien/Documents/node-v10.15.1-linux-x64/README.md",
+		"/home/julien/Web/ROT_13/main.py",
+		"/home/julien/Web/Signup/app.yaml",
+		"/home/julien/Web/ROT_13/app.yaml",
+		"/home/julien/Projet_PIDR/projects/mysql/Dockerfile",
+		"/home/julien/Downloads/templateIEEE_PIDR.tex",
+		"/opt/lampp/htdocs/tests/index.html",
+		"/home/julien/Compil/Makefile",
+		"/home/julien/MoocWeb/js/resumeBuilder.js",
+		"/home/julien/MoocWeb/index.html",
+		"/home/julien/MoocWeb/css/style.css",
+		"/home/julien/MoocWeb/js/helper.js",
+		"/home/julien/MoocWeb/js/jQuery.js",
+		"/home/julien/Projet_RS/comments.txt",
+		"/home/julien/Projet_RS/rsfind.c",
+		"/home/julien/Projet_RS/Makefile",
+		"/home/julien/Projet_RS/test.sh",
+		"/home/julien/Projet_RS/option.h",
+		"/home/julien/Projet_RS/option.c",
+		"/home/julien/Documents/clion-2018.3.1/Install-Linux-tar.txt",
+		"/home/julien/pcre.c",
+		"/home/julien/a.c",
+		"/home/julien/Projet_RS/pcre-8.41/missing",
+		"/home/julien/Projet_RS/opt_t.out",
+		"/home/julien/libmagic/README",
+		"/home/julien/.ssh/id_rsa",
+		"/home/julien/Conception_Dev/Arezzo/src/Arezzo/java/Keyboard.java",
+		"/home/julien/Compil/src/Main.java",
+		"/home/julien/Conception_Dev/Chocobar/src/Chocobar/View/PlayerView.java",
+		"/home/julien/Conception_Dev/Chocobar/src/Chocobar/View/GameView.java",
+		"/home/julien/Conception_Dev/Chocobar/src/Chocobar/Main.java",
+		"/home/julien/Conception_Dev/Chocobar/src/Chocobar/View/ClickHandler.java",
+		"/home/julien/Conception_Dev/Chocobar/src/Chocobar/View/BoardView.java",
+		"/home/julien/Conception_Dev/Chocobar/src/Chocobar/Model/Game.java",
+		"/home/julien/Conception_Dev/Arezzo/style.css",
+		"/home/julien/Projet_C/code/src/main.c",
+		"/home/julien/a.out",
+		"/home/julien/COMPIL/Tests/fibonacci",
+		"/home/julien/COMPIL/Tests/listes",
+		"/home/julien/COMPIL/Tests/matrices",
+		"/home/julien/COMPIL/Tests/test1",
+		"/home/julien/Downloads/r8152-2.10.0/r8152.c",
+		"/home/julien/COMPIL/Tests/profile",
+		"/home/julien/COMPIL/tests",
+		"/home/julien/Projet_RS/libmagic/src/asctime_r.c",
+		"/home/julien/Tigerex",
+		"/home/julien/COMPIL/Tiger.g",
+		"/home/julien/libmagic/INSTALL",
+		"/home/julien/COMPIL/output/TigerLexer.java",
+		"/home/julien/COMPIL/output/TigerParser.java",
+		"/home/julien/libmagic/aclocal.m4",
+		"/home/julien/libmagic/alocal.m4",
+		"/home/julien/libmagic/Makefile",
+		"/home/julien/MOCI/classes.uml",
+		"/home/julien/POO/TP4/src/dipole/TestsAutomatiques.java",
+		"/home/julien/Projet_PCD/.gitignore"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 316.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fuzzQuery",
+			"libraries(mysqld",
+			"library",
+			"libraries",
+			"mysys_ssl",
+			"library",
+			"sqld",
+			"sql_gis",
+			"convenience_",
+			"dispatch_",
+			"THD",
+			"sql_main",
+			"stmt_prepare(",
+			"stmt_prepare",
+			"stmt",
+			"sql_main",
+			"install",
+			"add_lib",
+			"sql",
+			"sql_common",
+			"# generate mysql_server_mock_schema.cc, which embeds mysql_server_mock_schema.js\n# as a c-string. Server mock build will trigger this as its dependency [_HERE_]\nADD_CUSTOM_COMMAND(OUTPUT mysql_server_mock_schema.cc\n                   COMMAND json_schema_embedder\n                     ${CMAKE_CURRENT_SOURCE_DIR}/mysql_server_mock_schema.js\n                     ${CMAKE_CURRENT_BINARY_DIR}/mysql_server_mock_schema.cc\n                     \"kSqlQueryJsonSchema\")\n\n\nSET(common_libraries)\nSET(math_libraries)\nIF(WIN32)\n  LIST(APPEND common_libraries Ws2_32.lib)\nELSEIF(${CMAKE_SYSTEM_NAME} STREQUAL \"SunOS\")\n  LIST(APPEND common_libraries -lnsl -lsocket -lpthread)\n  LIST(APPEND math_libraries -lm)\nELSE()\n  LIST(APPEND common_libraries -lpthread)\n  LIST(APPEND math_libraries -lm)\nENDIF()\n\n## Ubuntu 18.02 has duktape-2.2.0\nSET(DUKTAPE_SOURCE_DIR ${CMAKE_SOURCE_DIR}/extra/duktape/duktape-2.1.0/)\n\nSET(DUKTAPE_SRCS\n  ${DUKTAPE_SOURCE_DIR}/src/duktape.c\n  ${DUKTAPE_SOURCE_DIR}/extras/logging/duk_logging.c\n  ${DUKTAPE_SOURCE_DIR}/extras/module-node/duk_module_node.c)\n\nSET(MOCK_SERVER_HTTP_CLIENT_SRCS\n    mock_server_rest_client.cc)\n\nCHECK_CXX_COMPILER_FLAG(\"-Werror\" HAVE_ERROR)\nIF(HAVE_ERROR)\n  ADD_COMPILE_FLAGS(${DUKTAPE_SRCS} COMPILE_FLAGS \"-Wno-error\")\nENDIF()\n\nCHECK_CXX_COMPILER_FLAG(\"-Wmissing-noreturn\" HAVE_MISSING_NORETURN)\nIF(HAVE_MISSING_NORETURN)\n  ADD_COMPILE_FLAGS(${DUKTAPE_SRCS} COMPILE_FLAGS \"-Wno-missing-noreturn\")\nENDIF()\n\nCHECK_CXX_COMPILER_FLAG(\"-Wconditional-uninitialized\" HAVE_COND_UNINITIALIZED)\nIF(HAVE_COND_UNINITIALIZED)\n  ADD_COMPILE_FLAGS(${DUKTAPE_SRCS} COMPILE_FLAGS \"-Wno-conditional-uninitialized\")\nENDIF()\n\nCHECK_CXX_COMPILER_FLAG(\"-Wsuggest-attribute=format\" HAVE_SUGGEST_ATTRIBUTE)\nIF(HAVE_SUGGEST_ATTRIBUTE)\n  ADD_COMPILE_FLAGS(${DUKTAPE_SRCS} COMPILE_FLAGS \"-Wno-suggest-attribute=format\")\nENDIF()\n\nCHECK_CXX_COMPILER_FLAG(\"-Wimplicit-fallthrough\" HAVE_IMPLICIT_FALLTHROUGH)\nIF(HAVE_IMPLICIT_FALLTHROUGH)\n  ADD_COMPILE_FLAGS(${DUKTAPE_SRCS} COMPILE_FLAGS \"-Wno-implicit-fallthrough\")\nENDIF()\n\nCHECK_CXX_COMPILER_FLAG(\"-Wformat-truncation\" HAVE_FORMAT_TRUNCATION)\nIF(HAVE_FORMAT_TRUNCATION)\n  ADD_COMPILE_FLAGS(${DUKTAPE_SRCS} COMPILE_FLAGS \"-Wno-format-truncation\")\nENDIF()\n\nCHECK_CXX_COMPILER_FLAG(\"-Wformat-overflow\" HAVE_FORMAT_OVERFLOW)\nIF(HAVE_FORMAT_OVERFLOW)\n  ADD_COMPILE_FLAGS(${DUKTAPE_SRCS} COMPILE_FLAGS \"-Wno-format-overflow\")\nENDIF()\n\nADD_LIBRARY(duktape SHARED ${DUKTAPE_SRCS})\nTARGET_INCLUDE_DIRECTORIES(duktape SYSTEM PUBLIC\n  ${DUKTAPE_SOURCE_DIR}/src/\n  ${DUKTAPE_SOURCE_DIR}/extras/logging/\n  ${DUKTAPE_SOURCE_DIR}/extras/module-node/\n  )\nTARGET_LINK_LIBRARIES(duktape ${math_libraries})\n\nSET_TARGET_PROPERTIES(duktape PROPERTIES\n  LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/library_output_directory\n  RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/library_output_directory)\n\nIF(WIN32)\n  # LNK4049: locally defined symbol 'symbol' imported\n  # LNK4217: locally defined symbol 'symbol' imported in function 'function'\n  STRING_APPEND(CMAKE_SHARED_LINKER_FLAGS \" /ignore:4049 /ignore:4217\")\n\n  ADD_CUSTOM_COMMAND(TARGET duktape POST_BUILD\n    COMMAND ${CMAKE_COMMAND} -E copy_if_different\n    \"${CMAKE_BINARY_DIR}/library_output_directory/${CMAKE_CFG_INTDIR}/duktape.dll\"\n    \"${CMAKE_BINARY_DIR}/runtime_output_directory/${CMAKE_CFG_INTDIR}/duktape.dll\"\n   )\nENDIF()\n\nadd_harness_plugin(mock_server\n  NO_INSTALL\n  SOURCES json_statement_reader.cc\n  duktape_statement_reader.cc\n  mysql_protocol_decoder.cc\n  mysql_protocol_encoder.cc\n  mysql_protocol_utils.cc\n  mysql_server_mock.cc\n  mysql_server_mock_schema.cc\n  duk_module_shim.c\n  duk_node_fs.c\n  mock_server_plugin.cc\n  mock_server_component.cc\n  REQUIRES mysql_protocol;duktape)\n\nTARGET_INCLUDE_DIRECTORIES(mock_server SYSTEM PUBLIC\n  ${DUKTAPE_SOURCE_DIR}/src/\n  ${DUKTAPE_SOURCE_DIR}/extras/logging/\n  ${DUKTAPE_SOURCE_DIR}/extras/module-node/\n  ${DUKTAPE_SOURCE_DIR}/extras/module-duktape/\n  )\n\nTARGET_INCLUDE_DIRECTORIES(mock_server PUBLIC\n  ${PROJECT_SOURCE_DIR}/src/mock_server/include/\n  ${PROJECT_SOURCE_DIR}/src/router/include\n  ${PROJECT_SOURCE_DIR}/src/mysql_protocol/include/\n  )\n\nadd_harness_plugin(rest_mock_server\n  NO_INSTALL\n  SOURCES rest_mock_server.cc\n  REQUIRES mock_server;http_server)\nTARGET_INCLUDE_DIRECTORIES(rest_mock_server PUBLIC\n  ${PROJECT_SOURCE_DIR}/src/http/include\n  )\n\nADD_EXECUTABLE(mysql_server_mock\n  main.cc\n  )\n\nADD_LIBRARY(mock_server_rest_client ${MOCK_SERVER_HTTP_CLIENT_SRCS})\nTARGET_INCLUDE_DIRECTORIES(mock_server_rest_client PUBLIC\n    ${PROJECT_SOURCE_DIR}/src/mock_server/include/\n    ${PROJECT_SOURCE_DIR}/src/http/include/\n    )\n\n# add all targets to the build-all target\nADD_DEPENDENCIES(${MYSQL_ROUTER_BUILD_ALL_TARGET}\n        mysql_server_mock mock_server_rest_client)\n\n\nTARGET_LINK_LIBRARIES(mysql_server_mock ${common_libraries} harness-library)\nSET_TARGET_PROPERTIES(mysql_server_mock PROPERTIES\n  RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/runtime_output_directory)\nTARGET_COMPILE_DEFINITIONS(mysql_server_mock\n                           PRIVATE -Dmysql_protocol_DEFINE_STATIC=1)\nSET_PATH_TO_SSL(mysql_server_mock ${CMAKE_BINARY_DIR}/runtime_output_directory)",
+			"nulIndexes",
+			"THD",
+			"shared_sour",
+			"sources",
+			"mysqld_stmt_prepare",
+			"mysql_send_query",
+			"send_query",
+			"real_query",
+			"query",
+			"Prepared_statement",
+			"Prepare_statement",
+			"mysqld_stmt_prepare",
+			"stmt_preprare"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "fuzz/CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1698,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1648,
+								1648
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CMakeEditor/CMakeEditor.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/julien/PIDR/oss_fuzz/projects/mysql-server/Dockerfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Theme - Afterglow/Prefs/Langs/Dockerfile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/julien/PIDR/oss_fuzz/projects/mysql-server/project.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "fuzz/fuzzing_network_1.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								696,
+								696
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/julien/pidr_err.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								848,
+								848
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "sql/CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28024,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23887,
+								23887
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CMakeEditor/CMakeEditor.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15811.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "fuzz/fuzz_query.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/julien/PIDR/oss_fuzz/projects/mysql-server/build.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1000,
+								1000
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "sql/sql_parse.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 264893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72248,
+								72261
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 24133.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "sql/events.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41799,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32669,
+								32669
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15364.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.473620436029,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "pidr.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projet_RSA/my_twitter.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

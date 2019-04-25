@@ -1,4 +1,3 @@
-
 IF (FUZZING)
 MYSQL_ADD_EXECUTABLE(fuzz_network_1 fuzz_network_1.cc)
 TARGET_LINK_LIBRARIES(fuzz_network_1 mysqlclient)
@@ -29,12 +28,20 @@ TARGET_LINK_LIBRARIES(fuzz_network_1 FuzzingEngine)
  #   PRIVATE
 #    ${PROJECT_SOURCE_DIR}/router/src/router/include/)
 
+MYSQL_ADD_EXECUTABLE(fuzz_real_query fuzz_real_query.cc)
+TARGET_LINK_LIBRARIES(fuzz_real_query library_mysys)
+TARGET_LINK_LIBRARIES(fuzz_real_query mysqlclient)
+TARGET_LINK_LIBRARIES(fuzz_real_query FuzzingEngine)
 
+MYSQL_ADD_EXECUTABLE(fuzz_stmt_fetch fuzz_stmt_fetch.cc)
+TARGET_LINK_LIBRARIES(fuzz_stmt_fetch library_mysys)
+TARGET_LINK_LIBRARIES(fuzz_stmt_fetch mysqlclient)
+TARGET_LINK_LIBRARIES(fuzz_stmt_fetch FuzzingEngine)
 
-MYSQL_ADD_EXECUTABLE(fuzzing_stmt_prepare fuzzing_stmt_prepare.cc)
-TARGET_LINK_LIBRARIES(fuzzing_stmt_prepare library_mysys)
-TARGET_LINK_LIBRARIES(fuzzing_stmt_prepare mysqlclient)
-TARGET_LINK_LIBRARIES(fuzzing_stmt_prepare FuzzingEngine)
+MYSQL_ADD_EXECUTABLE(fuzz_stmt_execute fuzz_stmt_execute.cc)
+TARGET_LINK_LIBRARIES(fuzz_stmt_execute library_mysys)
+TARGET_LINK_LIBRARIES(fuzz_stmt_execute mysqlclient)
+TARGET_LINK_LIBRARIES(fuzz_stmt_execute FuzzingEngine)
 
 MYSQL_ADD_EXECUTABLE(fuzzQuery fuzzQuery.cc)
 TARGET_LINK_LIBRARIES(fuzzQuery sql_main)
