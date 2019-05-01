@@ -18,13 +18,9 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     mysql_init(&mysql);
     mysql.options.protocol = MYSQL_PROTOCOL_FUZZ;
     sock_initfuzz(Data,Size);
-    
     if (!mysql_real_connect(&mysql,"localhost","root","root","",0,NULL,0)) {
         return 0;
     }
-    
-    
-    
 
     mysql_real_query(&mysql, "SELECT * FROM Cars",(ulong)strlen("SELECT * FROM Cars"));
     mysql_close(&mysql);

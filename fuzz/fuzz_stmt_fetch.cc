@@ -94,26 +94,22 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 
     if (mysql_stmt_bind_result(stmt, bind))
     {
-      mysql_free_result(prepare_meta_result);
-      mysql_stmt_close(stmt);
-      mysql_close(&mysql);
-      return 0;
+        mysql_free_result(prepare_meta_result);
+        mysql_stmt_close(stmt);
+        mysql_close(&mysql);
+        return 0;
     }
     if (mysql_stmt_store_result(stmt))
     {
-      mysql_free_result(prepare_meta_result);
-            mysql_stmt_close(stmt);
-            mysql_close(&mysql);
-            return 0;
+        mysql_free_result(prepare_meta_result);
+        mysql_stmt_close(stmt);
+        mysql_close(&mysql);
+        return 0;
     }
-    while (!mysql_stmt_fetch(stmt))
-    {
-     }
-
+    while (!mysql_stmt_fetch(stmt)) {}
 
     mysql_free_result(prepare_meta_result);
     mysql_stmt_close(stmt);
     mysql_close(&mysql);
-    
     return 0;
 }
