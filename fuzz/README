@@ -1,4 +1,3 @@
-
 ### GENERALITIES AND BRANCHES USED ###
 This is the directory used for fuzzing, intended to be used with oss-fuzz. 
 There are three mains git branches used for fuzzing :

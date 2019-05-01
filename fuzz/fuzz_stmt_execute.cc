@@ -8,8 +8,6 @@
 #include <mysqld_error.h>
 #include "violite.h"
 
-
-
 using namespace std;
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
@@ -30,7 +28,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     char          str_data[STRING_SIZE];
     unsigned long str_length;
     bool          is_null;
-
 
     if (!mysql_real_connect(&mysql,"localhost","root","root","",0,NULL,0))
     {
@@ -59,8 +56,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
           mysql_close(&mysql);
           return 0;
      }
-
-
 
      memset(bind, 0, sizeof(bind));
 
@@ -146,7 +141,4 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
       mysql_stmt_close(stmt);
       mysql_close(&mysql);
       return 0;
-
-
-
 }

@@ -8,9 +8,6 @@
 #include <mysqld_error.h>
 #include "violite.h"
 
-
-
-
 using namespace std;
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
@@ -26,5 +23,3 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     mysql_close(&mysql);
     return 0;
 }
-
-

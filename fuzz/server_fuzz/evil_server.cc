@@ -15,7 +15,6 @@ void send_data(int clisocket, char *fileName) {
     uint8_t *Data;
     size_t Size;
 
- 
     //opens the file, get its size, and reads it into a buffer
     fp = fopen(fileName, "rb");
     if (fp == NULL) {
@@ -47,10 +46,7 @@ void send_data(int clisocket, char *fileName) {
     write(clisocket, Data, Size);
 }
 
-
 int main(int argc, char **argv) {
-	printf("%s\n", argv[1]);
-
 	int serverSocket;
 
 	if ((serverSocket = socket(PF_INET, SOCK_STREAM, 0)) < 0) {
@@ -87,9 +83,7 @@ int main(int argc, char **argv) {
 	}
 
 	//We have accepted things. Let's read crash file...
-	printf("%s\n", argv[1]);
 	send_data(dialogSocket, argv[1]);
-
 
 	char buf[500];
 	int size = 0;
