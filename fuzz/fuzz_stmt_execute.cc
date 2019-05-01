@@ -34,7 +34,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 
     if (!mysql_real_connect(&mysql,"localhost","root","root","",0,NULL,0))
     {
-                return 0; //ce n'est pas une erreur en soi
+                return 0;
     }
 
      MYSQL_STMT *stmt = mysql_stmt_init(&mysql);

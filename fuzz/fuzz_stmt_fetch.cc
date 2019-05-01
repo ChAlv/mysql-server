@@ -31,7 +31,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 
     if (!mysql_real_connect(&mysql,"localhost","root","root","",0,NULL,0))
     {
-          		return 0; //ce n'est pas une erreur en soi
+          		return 0;
     }
 
     MYSQL_STMT *stmt = mysql_stmt_init(&mysql);
@@ -50,7 +50,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     prepare_meta_result = mysql_stmt_result_metadata(stmt);
     if (!prepare_meta_result)
     {
-        printf(" %s\n", mysql_stmt_error(stmt));
         mysql_stmt_close(stmt);
         mysql_close(&mysql);
         return 0;
@@ -58,7 +57,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 
     if (mysql_stmt_execute(stmt))
     {
-        printf(" %s\n", mysql_stmt_error(stmt));
         mysql_stmt_close(stmt);
         mysql_close(&mysql);
         return 0;
@@ -110,39 +108,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     }
     while (!mysql_stmt_fetch(stmt))
     {
-    row_count++;
-
-      /* column 1 */
-      fprintf(stdout, "   column1 (integer)  : ");
-      if (is_null[0])
-        fprintf(stdout, " NULL\n");
-      else
-        fprintf(stdout, " %d(%ld)\n", int_data, length[0]);
-
-      /* column 2 */
-      fprintf(stdout, "   column2 (string)   : ");
-      if (is_null[1])
-        fprintf(stdout, " NULL\n");
-      else
-        fprintf(stdout, " %s(%ld)\n", str_data, length[1]);
-
-      /* column 3 */
-      fprintf(stdout, "   column3 (smallint) : ");
-      if (is_null[2])
-        fprintf(stdout, " NULL\n");
-      else
-        fprintf(stdout, " %d(%ld)\n", small_data, length[2]);
-
-      /* column 4 */
-      fprintf(stdout, "   column4 (timestamp): ");
-      if (is_null[3])
-        fprintf(stdout, " NULL\n");
-      else
-        fprintf(stdout, " %04d-%02d-%02d %02d:%02d:%02d (%ld)\n",
-                         ts.year, ts.month, ts.day,
-                         ts.hour, ts.minute, ts.second,
-                         length[3]);
-      fprintf(stdout, "\n");
      }
 
 

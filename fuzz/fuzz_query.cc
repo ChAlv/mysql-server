@@ -6,15 +6,12 @@
 #include "sql/sql_prepare.h"
 
 extern "C" int LLVMFuzzerTestQueryInput(const uint8_t* data,size_t size){
-	// MYSQL *mysql;
 	size_t offset = 0;
 	size_t sizereq = 0;
 	THD *thd = new THD();
 	thd->thread_stack = (char *)&thd;
 	thd->store_globals();
 	thd->reset_for_next_command();
-	// mysql_stmt_precheck(thd, com_data, command, &stmt);
-	// dispatch_command(NULL,NULL,0);
 	while (offset+sizereq < size) {
 		sizereq++;
 		if (data[offset+sizereq-1] == 0) {
