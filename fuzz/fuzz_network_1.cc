@@ -23,7 +23,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
             return 0;
     }
 
-  mysql_query(&mysql, "SELECT * FROM Cars")
+  mysql_query(&mysql, "SELECT * FROM Cars");
   mysql_close(&mysql);
   return 0;
 }

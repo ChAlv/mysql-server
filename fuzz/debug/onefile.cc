@@ -13,7 +13,6 @@ int main(int argc, char** argv)
     size_t Size;
 
     if (argc != 2) {
-	printf("Différent de 2\n");
         return 1;
     }
     //opens the file, get its size, and reads it into a buffer
