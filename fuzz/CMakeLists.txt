@@ -9,12 +9,10 @@ TARGET_LINK_LIBRARIES(fuzz_real_query mysqlclient)
 TARGET_LINK_LIBRARIES(fuzz_real_query FuzzingEngine)
 
 MYSQL_ADD_EXECUTABLE(fuzz_stmt_fetch fuzz_stmt_fetch.cc)
-TARGET_LINK_LIBRARIES(fuzz_stmt_fetch library_mysys)
 TARGET_LINK_LIBRARIES(fuzz_stmt_fetch mysqlclient)
 TARGET_LINK_LIBRARIES(fuzz_stmt_fetch FuzzingEngine)
 
 MYSQL_ADD_EXECUTABLE(fuzz_stmt_execute fuzz_stmt_execute.cc)
-TARGET_LINK_LIBRARIES(fuzz_stmt_execute library_mysys)
 TARGET_LINK_LIBRARIES(fuzz_stmt_execute mysqlclient)
 TARGET_LINK_LIBRARIES(fuzz_stmt_execute FuzzingEngine)
 
