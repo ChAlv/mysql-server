@@ -17,9 +17,7 @@ int main() {
       		return 0;
   	}
 
-  if (mysql_query(&mysql, "SELECT * FROM Cars")) 
-  {
-  }
+  mysql_query(&mysql, "SELECT * FROM Cars")
   mysql_close(&mysql);
   return 0;
 }
