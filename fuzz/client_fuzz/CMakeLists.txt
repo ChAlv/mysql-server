@@ -1,0 +1,2 @@
+MYSQL_ADD_EXECUTABLE(simple_select simple_select.cc)
+TARGET_LINK_LIBRARIES(simple_select mysqlclient)

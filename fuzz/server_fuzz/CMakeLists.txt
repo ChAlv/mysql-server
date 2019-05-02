@@ -1,0 +1,1 @@
+MYSQL_ADD_EXECUTABLE(evil_server evil_server.cc)

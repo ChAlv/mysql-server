@@ -1,0 +1,26 @@
+IF (FUZZING)
+MYSQL_ADD_EXECUTABLE(fuzz_network_1 fuzz_network_1.cc)
+TARGET_LINK_LIBRARIES(fuzz_network_1 mysqlclient)
+TARGET_LINK_LIBRARIES(fuzz_network_1 FuzzingEngine)
+
+MYSQL_ADD_EXECUTABLE(fuzz_real_query fuzz_real_query.cc)
+TARGET_LINK_LIBRARIES(fuzz_real_query library_mysys)
+TARGET_LINK_LIBRARIES(fuzz_real_query mysqlclient)
+TARGET_LINK_LIBRARIES(fuzz_real_query FuzzingEngine)
+
+MYSQL_ADD_EXECUTABLE(fuzz_stmt_fetch fuzz_stmt_fetch.cc)
+TARGET_LINK_LIBRARIES(fuzz_stmt_fetch mysqlclient)
+TARGET_LINK_LIBRARIES(fuzz_stmt_fetch FuzzingEngine)
+
+MYSQL_ADD_EXECUTABLE(fuzz_stmt_execute fuzz_stmt_execute.cc)
+TARGET_LINK_LIBRARIES(fuzz_stmt_execute mysqlclient)
+TARGET_LINK_LIBRARIES(fuzz_stmt_execute FuzzingEngine)
+
+MYSQL_ADD_EXECUTABLE(fuzz_query fuzz_query.cc)
+TARGET_LINK_LIBRARIES(fuzz_query libbinlogevents)
+TARGET_LINK_LIBRARIES(fuzz_query FuzzingEngine)
+ENDIF()
+
+ADD_SUBDIRECTORY(client_fuzz)
+ADD_SUBDIRECTORY(server_fuzz)
+ADD_SUBDIRECTORY(debug)
