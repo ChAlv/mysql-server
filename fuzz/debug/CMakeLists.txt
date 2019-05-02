@@ -1,3 +1,0 @@
-MYSQL_ADD_EXECUTABLE(fuzz_network_1_onefile fuzz_network_1_onefile.cc)
-TARGET_LINK_LIBRARIES(fuzz_network_1_onefile library_mysys)
-TARGET_LINK_LIBRARIES(fuzz_network_1_onefile mysqlclient)
