@@ -4,7 +4,6 @@ TARGET_LINK_LIBRARIES(fuzz_network_1 mysqlclient)
 TARGET_LINK_LIBRARIES(fuzz_network_1 FuzzingEngine)
 
 MYSQL_ADD_EXECUTABLE(fuzz_real_query fuzz_real_query.cc)
-TARGET_LINK_LIBRARIES(fuzz_real_query library_mysys)
 TARGET_LINK_LIBRARIES(fuzz_real_query mysqlclient)
 TARGET_LINK_LIBRARIES(fuzz_real_query FuzzingEngine)
 
@@ -21,6 +20,6 @@ TARGET_LINK_LIBRARIES(fuzz_query libbinlogevents)
 TARGET_LINK_LIBRARIES(fuzz_query FuzzingEngine)
 ENDIF()
 
-ADD_SUBDIRECTORY(client_fuzz)
-ADD_SUBDIRECTORY(server_fuzz)
-ADD_SUBDIRECTORY(debug)
+MYSQL_ADD_EXECUTABLE(fuzz_network_1_onefile fuzz_network_1_onefile.cc)
+TARGET_LINK_LIBRARIES(fuzz_network_1_onefile library_mysys)
+TARGET_LINK_LIBRARIES(fuzz_network_1_onefile mysqlclient)
