@@ -25,13 +25,18 @@ SET(VIO_SOURCES
   viosocket.cc
   viossl.cc
   viosslfactories.cc
-  viofuzz.cc
 )
 
 IF(WIN32)
   LIST(APPEND VIO_SOURCES
     viopipe.cc
     vioshm.cc
+  )
+ENDIF()
+
+IF(FUZZING OR FUZZINGDEBUG)
+  LIST(APPEND VIO_SOURCES
+    viofuzz.cc
   )
 ENDIF()
 

@@ -20,6 +20,6 @@ TARGET_LINK_LIBRARIES(fuzz_query libbinlogevents)
 TARGET_LINK_LIBRARIES(fuzz_query FuzzingEngine)
 ENDIF()
 
-MYSQL_ADD_EXECUTABLE(fuzz_network_1_onefile fuzz_network_1_onefile.cc)
-TARGET_LINK_LIBRARIES(fuzz_network_1_onefile library_mysys)
+MYSQL_ADD_EXECUTABLE(fuzz_network_1_onefile fuzz_network_1.cc onefile.cc)
 TARGET_LINK_LIBRARIES(fuzz_network_1_onefile mysqlclient)
+TARGET_LINK_LIBRARIES(fuzz_network_1_onefile library_mysys)
